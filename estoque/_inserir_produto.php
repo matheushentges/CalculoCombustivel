@@ -26,4 +26,4 @@ $sql = "INSERT INTO `estoque` (`nroproduto`, `nomeproduto`, `categoria`, `quanti
 //print_r($sql);
 $inserir = mysqli_query($conexao,$sql);
 //var_dump($inserir);
-?>
+?> 
