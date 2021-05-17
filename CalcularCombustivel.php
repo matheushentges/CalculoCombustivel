@@ -13,7 +13,7 @@ include 'Calcular.php';
 
 $media = new Calcular();
 $media->setKM($_POST['distancia']);
-$media->setLitros($_POST['litros']);
+$media->setConsumo($_POST['litros']);
 
 $media->media();
 
