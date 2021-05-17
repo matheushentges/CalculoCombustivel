@@ -25,17 +25,14 @@
 
 <?php
 
-ini_set('display_errors',1);
-ini_set('display_startup_erros',1);
-error_reporting(E_ALL);
 
 
 	if(isset($_GET['media'])) {
 		$media = $_GET['media'];
 		if ($media >= 10) {
-			echo '<h2 class="verde"> A média é ' . number_format($media, 2, ',', ',') . '. </h2>';
+			echo '<h2 class="verde"> A média é ' . number_format($media, 2, ',', ',') . ' litros por km rodado. </h2>';
 		}else{
-			echo '<h2 class="vermelho"> A média é ' . number_format($media, 2, ',', ',') . '. </h2>';
+			echo '<h2 class="vermelho"> A média é ' . number_format($media, 2, ',', ',') . ' litros por km rodado. </h2>';
 		}
 	}
 ?>
