@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 class Calcular
 {
     private $km;
-    private $litrosGasto;
+    private $consumo;
 
 
     public function __construct(){
@@ -22,16 +22,16 @@ class Calcular
         echo $this->km . '<br>';
     }
 
-    public function setLitros($litrosGastos){
-        $this->litrosGastos = $litrosGastos;
+    public function setConsumo($consumo){
+        $this->consumo = $consumo;
     }
 
-    public function getLitros(){
-        echo $this->litrosGastos . '<br>';
+    public function getConsumo(){
+        echo $this->consumo . '<br>';
     }
 
     public function media(){
-        $media =  $this->km / $this->litrosGastos;
+        $media =  $this->km / $this->consumo;
         if($media){
             header('Location: index.php?media=' . $media);
         }
