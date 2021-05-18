@@ -12,7 +12,3 @@ $media->setKM($_POST['distancia']);
 $media->setConsumo($_POST['litros']);
 
 $media->media();
-
-if ($media) {
-	header('Location: index.php?media=' . $media);
-}
